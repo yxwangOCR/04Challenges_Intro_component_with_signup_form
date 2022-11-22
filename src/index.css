@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 3em 0;
+  margin: 0 auto;
 }
 .intro {
   margin: 1em 3em 0 3em;
@@ -111,6 +112,10 @@ form p span {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 2em;
+  }
+  .desktop-right-block {
+    margin: 0 2em;
   }
   .intro {
     max-width: 40%;
