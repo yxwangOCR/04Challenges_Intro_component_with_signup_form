@@ -8,3 +8,131 @@
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  width: 345px;
+  background-image: url("./images/bg-intro-mobile.png");
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+  padding: 3em 0;
+}
+.intro {
+  margin: 1em 3em 0 3em;
+  text-align: center;
+  color: #fff;
+}
+.intro h1 {
+  font-size: 1.7rem;
+}
+.intro p {
+  font-size: 0.8rem;
+}
+.Call-to-Action {
+  background-color: var(--blue);
+  color: #fff;
+  margin: 2em;
+  padding: 0.5em 2em;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.Call-to-Action p span {
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #fff;
+  margin: 0 2em;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+form .input-block {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+}
+form .input-block input {
+  padding: 1em;
+  outline: none;
+  border: 1.5px solid var(--Grayish-Blue);
+  border-radius: 5px;
+}
+form .input-block i {
+  color: var(--red);
+  font-size: 1.3rem;
+  position: relative;
+  top: -1.6em;
+  left: 13rem;
+}
+form .input-block span {
+  color: var(--red);
+  font-size: 0.6rem;
+  text-align: right;
+  position: relative;
+  top: -2em;
+}
+form button {
+  font-size: 13px;
+  padding: 1em;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--green);
+  color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+form p {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--Grayish-Blue);
+}
+form p span {
+  color: var(--red);
+}
+
+@media screen and (min-width: 768px) {
+  .App {
+    width: 80%;
+    background-image: url("./images/bg-intro-desktop.png");
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro {
+    max-width: 40%;
+    margin: 0 2em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Call-to-Action {
+    margin: 0 0 1em 0;
+  }
+  form {
+    margin: 0;
+    padding: 2em;
+  }
+  form p {
+    font-size: 0.5rem;
+  }
+
+  form .input-block i {
+    left: 18em;
+  }
+}
