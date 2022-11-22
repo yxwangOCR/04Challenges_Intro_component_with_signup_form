@@ -112,7 +112,7 @@ form p span {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding: 5em 2em;
   }
   .desktop-right-block {
     margin: 0 2em;
